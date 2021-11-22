@@ -1,9 +1,8 @@
 import { combineReducers } from "redux";
-import { productsReducer, selectedProductsReducer } from "./productsReducer";
-
+import { productsReducer, selectProductReducer } from "./productsReducer";
 
 const reducers = combineReducers({
   allProducts: productsReducer,
-  product: selectedProductsReducer,
+  selectproduct: selectProductReducer,
 });
 export default reducers;

@@ -12,10 +12,10 @@ export const productsReducer = (state = intialState, { type, payload }) => {
   }
 };
 
-export const selectedProductsReducer = (state = {}, { type, payload }) => {
+export const selectProductReducer = (state = {}, { type, payload }) => {
   console.log(type);
   switch (type) {
-    case ActionTypes.SELECTED_PRODUCT:
+    case ActionTypes.SELECT_PRODUCT:
       return { ...state, ...payload };
     case ActionTypes.REMOVE_SELECTED_PRODUCT:
       return {};
@@ -23,3 +23,5 @@ export const selectedProductsReducer = (state = {}, { type, payload }) => {
       return state;
   }
 };
+
+
