@@ -25,6 +25,7 @@ const ProductComponent = () => {
       </div>
     );
   });
+
   return <>{renderList}</>;
 };
 
